@@ -9,3 +9,37 @@ body {
     width: 100%;
     border: 1px solid black;
 }
+#titleDisplay {
+    width: 100%;
+    height: 50%;
+    background-image: url('../imgs/investorRelBgnd.png');
+}
+#minorNavBar {
+    width: 100%;
+    height: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    overflow: hidden;
+}
+.sticky {
+    position: fixed;
+    top: 0.1%;
+    width: 100%;
+}
+#minorNavBar > div > div {
+    float: left;
+    font-size: 18px;
+    color: #33475b;
+    font-weight: bold;
+    margin: auto;
+}
+#minorNavBar > div > div > p {
+    text-align: center;
+}
+#minorNavBar > div > div:hover {
+    background-color: rgb(234, 240, 246);
+    cursor: pointer;
+}
+#minorNavBar > div {
+    margin-left: 8%;
+}
