@@ -5,7 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: rgb(51, 51, 51);
-    background-color: rgb(252, 252, 255);
+    background-color: rgba(232, 255, 253, 0.685);
     margin: 0%;
     padding-top: 65px; 
     
@@ -382,6 +382,8 @@ body {
 
 /*Home Page-1 Ended */
 
+/* Below Homepage page-1 Start */
+
 .hub-homepage-cont-page2-just-below{
   text-align: left;
   width: 850px;
@@ -427,4 +429,70 @@ body {
 #get-crm-free:hover{
   background-color: #ff7a5979
 }
+
+
+.homepage2-cont-4boxes-box1{
+  display: grid;
+  /* border: 1px solid red; */
+  width: 40%;
+  gap: 15px;
+  padding: 10px 60px 20px 60px;
+}
+.homepage2-cont-4boxes-box1>div{
+  text-align: left;
+  display: grid;
+  gap: 15px;
+}
+.homepage2-cont-4boxes-box1>div>p{
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.homepage2-cont-4boxes-box1>div i{
+  color: #ff7a59;
+}
+.homepage2-cont-4boxes-box1>div i>span{
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 500;
+  margin-top: 0;
+  color: rgb(51, 51, 51);
+  margin-left: 10px;
+}
+
+.homepage2-cont-4boxes-box1>p{
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 500;
+  margin-top: 0;
+}
+.homepage2-cont-4boxes-box1>h2{
+  font-size: 25px;
+  font-weight: 900px;
+}
+.homepage2-cont-4boxes-box1>span{
+  margin: auto;
+}
+.homepage2-cont-4boxes-box1:hover{
+  box-shadow: 2px 2px 14px 2px rgba(216, 216, 216, 0.438);
+    border-radius: 4px;
+    width: 40.2%;
+}
+#homepage2-cont-4boxes-box1-btn:hover{
+  background-color: #ff7a5979
+}
+#homepage2-cont-4boxes-1{
+  display: flex;
+  justify-content: center;
+  
+}
+#homepage2-cont-4boxes-1 div{
+  margin: 10px;
+  background-color: white;
+}
+#homepage2-cont-4boxes{
+  margin-bottom: 70px;
+  
+}
+
 
