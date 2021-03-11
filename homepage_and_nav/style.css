@@ -474,7 +474,7 @@ body {
   margin: auto;
 }
 .homepage2-cont-4boxes-box1:hover{
-  box-shadow: 2px 2px 14px 2px rgba(216, 216, 216, 0.438);
+  box-shadow: 2px 2px 14px 6px rgba(216, 216, 216, 0.438);
     border-radius: 4px;
     width: 40.2%;
 }
@@ -494,5 +494,100 @@ body {
   margin-bottom: 70px;
   
 }
+
+/* After 4BOXES Learn and grow with award-winning support */
+
+#hub-homepage-learn-and-grow{
+  background-image: linear-gradient(45deg,#00a4bd,#00bda5);
+  width: 100%;
+  height: 130vh;
+  margin-bottom: 50px;
+
+}
+#hub-homepage-learn-and-grow>div>h2{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+#hub-homepage-learn-and-grow>div>p{
+  width: 100%;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  letter-spacing: 1.8px;
+  font-size: 15px;
+}
+#hub-homepage-learn-and-grow>.learn-and-grow-textPart{
+  margin: auto;
+  /* border: 1px solid red; */
+  width: 60%;
+  padding-top: 90px;
+}
+.hub-homepage-learn-and-grow-8grids{
+  width: 80%;
+  /* border: 1px solid red; */
+  display: grid;
+  /* gap: 10px; */
+  
+  
+}
+#hub-homepage-learn-and-grow>.hub-homepage-learn-and-grow-8grids{
+  margin: auto;
+  padding-top: 50px;
+}
+.learn-and-grow-8grids{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+
+}
+.learn-and-grow-8grids div{
+  
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  width: 25%;
+  height: fit-content;
+  /* margin: 10px; */
+  height: 210px;
+}
+.learn-and-grow-8grids div:nth-child(4){
+  border-bottom: 1px solid white;
+  border-right: 0
+}
+.learn-and-grow-8grids-2 div:nth-child(1){
+  border-bottom: 0;
+}
+.learn-and-grow-8grids-2 div:nth-child(2){
+  border-bottom: 0;
+}
+.learn-and-grow-8grids-2 div:nth-child(3){
+  border-bottom: 0;
+}
+.learn-and-grow-8grids-2 div:nth-child(4){
+  border-bottom: 0;
+}
+
+
+.learn-and-grow-8grids-header{
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 5px;
+  padding:0 ;
+}
+.learn-and-grow-8grids-para{
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+
+}
+.learn-and-grow-8grids div>img{
+  padding-top: 20px;
+}
+
+/* After 4BOXES Learn and grow with award-winning support ENDED */
 
 
