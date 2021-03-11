@@ -591,3 +591,62 @@ body {
 /* After 4BOXES Learn and grow with award-winning support ENDED */
 
 
+/* After 8grids someCompnaies(SUZUKI , TRELLO ,WWF) STARTS */
+
+
+#hub-homepage-wwf-suzuki-trello {
+  display: flex;
+  /* border: 1px solid red; */
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+#hub-homepage-wwf-suzuki-trello>.hub-homepage-wwf-suzuki-trello-rightside{
+  margin: auto;
+}
+#hub-homepage-wwf-suzuki-trello>.wwf-suzuki-trello-leftside{
+  margin: auto;
+  text-align: left;
+  width: 30%;
+  margin-top: 30px;
+}
+.hub-homepage-wwf-suzuki-trello-rightside{
+display: grid;
+/* border: 1px solid red; */
+justify-content: center;
+align-items: center;
+
+}
+.wwf-suzuki-trello-grid{
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.wwf-suzuki-trello-grid div{
+  width: 100%;
+  height: 110px;
+  /* border: 1px solid red; */
+  padding-top: 30px;
+  margin: 15px;
+}
+.wwf-suzuki-trello-grid div>img{
+  width: 110px;
+}
+.wwf-suzuki-trello-grid>.classPass{
+  padding-top: 14px;
+}
+
+.wwf-suzuki-trello-leftside>h2{
+  font-size: 45px;
+  margin-bottom: 0;
+}
+.wwf-suzuki-trello-leftside>p{
+  font-size: 16px;
+  line-height: 30px;
+
+}
+
+/* After 8grids someCompnaies(SUZUKI , TRELLO ,WWF) ENDS */
+
+
