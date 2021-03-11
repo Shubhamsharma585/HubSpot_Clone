@@ -597,7 +597,7 @@ body {
 #hub-homepage-wwf-suzuki-trello {
   display: flex;
   /* border: 1px solid red; */
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-top: 80px;
 }
 #hub-homepage-wwf-suzuki-trello>.hub-homepage-wwf-suzuki-trello-rightside{
@@ -649,4 +649,37 @@ align-items: center;
 
 /* After 8grids someCompnaies(SUZUKI , TRELLO ,WWF) ENDS */
 
-
+#homepage-lastPage-page5{
+  display: flex;
+  /* border: 1px solid red; */
+  margin-bottom: 60px;
+}
+#homepage-lastPage-page5>.homepage-lastPage-page5-leftSide{
+/* border: 1px solid red; */
+text-align: left;
+padding-left: 10%;
+padding-top: 7%;
+}
+#homepage-lastPage-page5>.homepage-lastPage-page5-leftSide>h1{
+  color: #33475b;
+}
+#homepage-lastPage-page5>.homepage-lastPage-page5-leftSide>p{
+  line-height: 30px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+  color: #33475b;
+}
+#homepage-lastPage-page5>.homepage-lastPage-page5-leftSide>span{
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgb(12, 12, 136);
+}
+#homepage-lastPage-page5>.homepage-lastPage-page5-rightSide{
+  width: 60%;
+  /* border: 1px solid red; */
+}
+#homepage-lastPage-page5>.homepage-lastPage-page5-rightSide>img{
+  width: 70%;
+  margin-left: auto;
+}
