@@ -7,9 +7,10 @@ body {
     color: rgb(51, 51, 51);
     background-color: rgba(232, 255, 253, 0.685);
     margin: 0%;
-    padding-top: 65px; 
+    padding-top: 85px; 
     
   }
+
 
 /* NAV BAR */
 
@@ -24,12 +25,65 @@ body {
     display: none;
   }
 
+  #top-navigation-bar{
+    background-color: white;
+    height: 30px;
+    vertical-align: middle;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  #top-navigation-bar a{
+    font-size: 12px;
+  }
+  #top-navigation-bar ul{
+    display: flex;
+    padding-left: 110px;
+    margin: 0px;
+    height: 10%;
+  }
+  #top-navigation-bar li{
+    list-style: none;
+    margin: 5px 20px;
+  }
+  .top-nav-space{
+    width: 45%;
+  }
+.bout-nav{
+    width: 13%;
+    height: 200px; 
+    margin-left: auto;
+    margin-right: 6%;
+    margin-top: 30px;
+    /* display: none; */
+    text-align: left;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 14px 6px rgba(216, 216, 216, 0.438);
+    border-radius: 3px;
+
+}
+.bout-nav div>div>a>span{
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+}
+.bout-nav div>div>a>span:hover{
+  color: #007188;
+  font-weight: 500;
+}
+.bout-nav div{
+  padding: 2px 8px;
+}
+
+/* ////////////////////////////// */
+
+
   nav > a {
     display: inline;
   }
   nav {
     background-color: white;
-    height: 80px;
+    height: 100px;
     vertical-align: middle;
     width: 100%;
     position: fixed;
@@ -85,7 +139,7 @@ body {
     color: white;
     border: none;
     transition: background-color 0.5s ease;
-
+    
     outline: none;
   }
   li > button:hover {
@@ -167,6 +221,8 @@ body {
     display: none;
     text-align: left;
     background-color: white;
+    box-shadow: 2px 2px 14px 6px rgba(216, 216, 216, 0.438);
+    border-radius: 3px;
   }
   .soft-nav > .software-nav-1-2,.software-nav-2-2{
     width: 35%;
@@ -248,7 +304,8 @@ body {
     background-color: white;
     height: auto;
     width: 55%;
-    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 2px 2px 14px 6px rgba(216, 216, 216, 0.438);
+    border-radius: 3px;
   }
   #res-nav > div {
     flex-basis: 280px;
@@ -317,11 +374,11 @@ body {
 #hub-homepage-cont-page1{
   width: 100%;
   height: 129vh;
-  background-image:url("https://cdn2.hubspot.net/hubfs/53/raw_assets/public/_Web%20Team%20Assets/Website/assets/svg/hero.svg"),linear-gradient(#fef8f0,#fff3ee,#fff1ee);
+  background-image:url("https://cdn2.hubspot.net/hubfs/53/raw_assets/public/_Web%20Team%20Assets/Website/assets/svg/hero.svg"),url("https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/home/2019/clouds-desktop.svg"),linear-gradient(#fef8f0,#fff3ee,#fff1ee);
   
-  background-repeat: no-repeat no-repeat;
-  background-size: 100% cover;
-  background-position: right bottom,0% 0%;
+  background-repeat: no-repeat;
+  background-size: 100% 80% cover;
+  background-position: right bottom,right top,0% 0%;
 
   border-bottom: 3px solid #33475b;
 }
