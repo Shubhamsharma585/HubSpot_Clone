@@ -18,20 +18,20 @@ a:hover{
     cursor: pointer;
 }
 body {
-    width: 100vw;
+    width: 98.5vw;
     height: 100vh;
     margin: 0;
     font-family: 'Roboto';
-    padding: 0;
+    padding: 0px;
     color: #33475b;
 }
 #navbar {
     height: 15%;
-    width: 99%;
+    width: 100%;
     border: 1px solid black;
 }
 #titleDisplay {
-    width: 99%;
+    width: 100%;
     height: 50%;
     background-image: url('../imgs/investorRelBgnd.png');
     color: white;

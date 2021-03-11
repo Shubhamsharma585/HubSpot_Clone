@@ -8,12 +8,84 @@ var setAndUnsetStickyNavbar = () => {
         minorNavbar.classList.remove("sticky");
       }
 }
-
+var arrPagination= [];
 window.onscroll = function() {setAndUnsetStickyNavbar()};
 
 function redirectToEvents() {
   window.location = 'https://ir.hubspot.com/events';
 }
+
+var todayOpen;
+var previousClose;
+var intradayLow;
+var intradayHigh;
+var diff;
+var percentVariation;
+
+function fetchStockValues(){
+  var url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=HUBS&apikey=ZKXHU7OG6GYWPLUZ';
+  let count = 0;
+fetch(url)
+.then(function (response) {
+  response.json().then(function (res) {
+      console.log(res);
+      let key;
+      for(key in res['Time Series (Daily)']){
+          count++;
+          if(count == 1) {
+              todayOpen = Math.round((Number(res['Time Series (Daily)'][key]['1. open']) * 100))/100;
+              previousClose = Math.round((Number(res['Time Series (Daily)'][key]['4. close']) * 100))/100;
+              intradayLow = Math.round((Number(res['Time Series (Daily)'][key]['3. low']) * 100))/100;
+              intradayHigh = Math.round((Number(res['Time Series (Daily)'][key]['2. high']) * 100))/100;
+              diff = Math.round((previousClose - intradayLow) * 100) / 100;
+              percentVariation = Math.round((((diff) / intradayLow) * (10 ** 6))/100)/100;
+              console.log("today", todayOpen, "previous close", previousClose, "intraday Low", 
+              intradayLow, "intraday high", intradayHigh, "percent variation", percentVariation);
+          }
+          if(count == 2) {
+              console.log("yesterday", res['Time Series (Daily)'][key]);
+          }
+      }
+      addInvestorOverview();
+  })
+})
+}
+function printSplitPages(buttonNumber) {
+  let paginationDiv = document.getElementById('pagination');
+  paginationDiv.innerHTML = '';
+  buttonNumber = Number(buttonNumber);
+  let start = buttonNumber * 5 - 5;
+  let stop = buttonNumber * 5 - 1;
+  for(var k = start; k <= stop; k++) {
+    paginationDiv.innerHTML += `<tr><td>${data.secFillingUpdateContents[k][0]}</td> <td> ${data.secFillingUpdateContents[k][1]}</td>
+    <td>${data.secFillingUpdateContents[k][2]}</td><td><a href = "https://wtcfns.hubspot.com/wt-ir-api/get-sec-doc-types?id=${data.secFillingUpdateContents[k][3]}&docType=DOC">DOC</a></td>
+    <td><a href = "https://wtcfns.hubspot.com/wt-ir-api/get-sec-doc-types?id=${data.secFillingUpdateContents[k][3]}&docType=PDF">PDF</a></td>
+    <td><a href = "https://wtcfns.hubspot.com/wt-ir-api/get-sec-doc-types?id=${data.secFillingUpdateContents[k][3]}&docType=HTML">HTML</a></td>
+    <td><a href = "https://wtcfns.hubspot.com/wt-ir-api/get-sec-doc-types?id=${data.secFillingUpdateContents[k][3]}&docType=XLS">XLS</a></td></tr>
+    <tr><td colspan = "7"><hr/><td></tr>`
+}
+}
+var reorder = () => {
+  let num = event.target.id;
+  printSplitPages(Number(num));
+  console.log('reorder here', num);
+}
+var methodArr = [];
+function printButtons() {
+    let buttonCount = data.secFillingUpdateContents.length / 5;
+    document.getElementById('paginationButtons').innerHTML = '';
+    for(let j = 1; j <= buttonCount; j++){
+      let buttonId = j;
+      let button = document.createElement('button');
+      button.setAttribute('id', buttonId);
+      button.onclick = reorder;
+      button.innerHTML = buttonId;
+      document.getElementById('paginationButtons').appendChild(button);
+      //document.getElementById('paginationButtons').innerHTML += `<button id = "${buttonId}" onclick = 'reorder()'>${j}</button>`;
+      //document.getElementById(buttonId).addEventListener("click", reorder);
+    }
+    //console.log(methodArr[3]);
+  }
 
 let addInvestorOverview = () => {
   var url = ["https://ir.hubspot.com/news/hubspot-reports-q4-and-full-year-2020-results",
@@ -59,22 +131,32 @@ let addInvestorOverview = () => {
   document.getElementById("orangeButton").addEventListener("click", redirectToEvents);
   document.getElementById('contentDisplay').innerHTML += `<div 
   style = "width: 100%; background-color: rgb(245, 248, 250); height: 50%; padding-top : 5%; padding-bottom : 5%; margin-top: 5%;">
-  <div><h5 style = "font-size : 15px; text-align : center; margin: 0;">NYSE | HUBS</h5>
-  <h2 style = "font-size : 70px; font-weight : bolder;text-align : center; margin: 0;">$XXX.XX</h2>
-  <p style = "font-size : 20px; text-align : center; color : #00A38D; margin: 0;">+x.xx(x.xx %)</p></div>
+  <div><h5 style = "font-size : 15px; text-align : center; margin: 0px;">NYSE | HUBS</h5>
+  <h2 style = "font-size : 70px; font-weight : bolder;text-align : center; margin: 0;">$${previousClose}</h2>
+  <p style = "font-size : 20px; text-align : center; color : #00A38D; margin: 0;">+${diff} (${percentVariation} %)</p></div>
   <div 
   style = "border : 1px solid rgb(153, 172, 194); width : 50%; height : 100px; margin-top : 3%; margin-left : 23%;
-  background-color : white; padding : 1%;">
-  <div><p  style = "float : left; text-align : center; font-weight : bold;">Today's Open <br/> 467</p><div>
+  background-color : white; ">
+  <div style = "margin-top : 1%;">
+  <div style = "margin-left : 9%;"><p  style = "float : left; text-align : center; font-weight : bold;">Today's Open <br/> <span style ="font-weight : lighter;">${todayOpen}</span></p><div>
   <div><span  style = "float : left; margin : 1%; font-size : 50px; color : rgb(153, 172, 194); font-weight : 10;">|</span><div>
-  <div><p style = "float : left; text-align : center;">Previous Close<br/>452</p><div>
+  <div><p style = "float : left; text-align : center; font-weight : bold;">Previous Close<br/> <span style ="font-weight : lighter;">${previousClose}</span></p><div>
   <div><span  style = "float : left; margin : 1%; font-size : 50px; color : rgb(153, 172, 194); font-weight : 10;">|</span><div>
-  <div><p style = "float : left; text-align : center;">Intraday<br/>High 342 | Low 231</p><div>  
+  <div><p style = "float : left; text-align : center; font-weight : bold;">Intraday<br/><span style ="font-weight : lighter;">High ${intradayHigh} | Low ${intradayLow}</span></p><div>  
   <div><span  style = "float : left; margin : 1%; font-size : 50px; color : rgb(153, 172, 194); font-weight : 10;">|</span><div>
-  <div><p  style = "float : left; text-align : center;">52 Week<br/>High 342 | Low 231</p><div>
+  <div><p  style = "float : left; text-align : center; font-weight : bold;">52 Week<br/><span style ="font-weight : lighter;">High 342 | Low 231</span></p><div>
+  </div>
   </div>
   </div>`;
-  console.log('here');
+  document.getElementById('contentDisplay').innerHTML += `<div style = "margin-top : 8%;
+   margin-left : 28%; border : 1px solid black; width: 45%"; padding: 5%;">
+  <h3 style = "font-size : 23px;">SEC Filing</h3>
+  <hr/>
+  <table id = "pagination"></table>
+  <div style = 'margin-left : 40%;' id = "paginationButtons"></div>
+  </div>`;
+  printSplitPages(1);
+  printButtons();
 }
  
 let addNews = () => {
@@ -102,4 +184,4 @@ let showFaq = () => {
  document.getElementById("eventUpdate").addEventListener("click", updateEvent);
  document.getElementById("leadershipDetails").addEventListener("click", updateLeadershipDetails);
  document.getElementById("faq").addEventListener("click", showFaq);
- window.onload = addInvestorOverview();
+ window.onload = fetchStockValues();
