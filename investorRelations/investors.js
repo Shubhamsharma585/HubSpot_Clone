@@ -8,8 +8,7 @@ var setAndUnsetStickyNavbar = () => {
         minorNavbar.classList.remove("sticky");
       }
 }
-var arrPagination= [];
-window.onscroll = function() {setAndUnsetStickyNavbar()};
+window.onscroll = function() {setAndUnsetStickyNavbar()}
 
 function redirectToEvents() {
   window.location = 'https://ir.hubspot.com/events';
@@ -70,7 +69,6 @@ var reorder = () => {
   printSplitPages(Number(num));
   console.log('reorder here', num);
 }
-var methodArr = [];
 function printButtons() {
     let buttonCount = data.secFillingUpdateContents.length / 5;
     document.getElementById('paginationButtons').innerHTML = '';
@@ -178,6 +176,31 @@ let showFaq = () => {
   document.getElementById('titleDisplay').innerHTML = `<div style = "text-align : center; margin-top : 75px;"><h4>${data.titleAndContent.faq[0]}</h4>
   <h1>${data.titleAndContent.faq[1]}</h1>`;
   document.getElementById('contentDisplay').innerHTML = '';
+  document.getElementById('contentDisplay').innerHTML = `<div style = "font-size: 18px; width : 40%; margin-top:10%; margin-left:25%;"><p>Want to know more about HubSpot? Here are answers
+   to the most commonly asked questions about our company.</p></div>`;
+  for(let i = 0; i < data.faqs.length; i++) {
+    document.getElementById('contentDisplay').innerHTML += `<button class = "faq" ><i id = "button_${i}" class = "arrow right"></i>${data.faqs[i][0]}</button>
+    <div class = "responsePanel"><p>${data.faqs[i][1]}</p></div>`;
+  }
+  var faqStyle = document.getElementsByClassName("faq");
+  var iTag = [];
+for (let i = 0; i < faqStyle.length; i++) {
+  iTag[i] = document.getElementById(`button_${i}`);
+  faqStyle[i].addEventListener("click", function() {
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      iTag[i].classList.remove("down");
+      iTag[i].classList.add("right");
+      faqStyle[i].style.border = "0";
+    } else {
+      panel.style.display = "block";
+      iTag[i].classList.remove("right");
+      iTag[i].classList.add("down");
+      faqStyle[i].style.border = "2px solid rgb(0, 164, 189)";
+    }
+  });
+}
  }
  document.getElementById('investorOverview').addEventListener("click", addInvestorOverview);
  document.getElementById("news").addEventListener("click", addNews);

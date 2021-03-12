@@ -72,3 +72,44 @@ body {
     background-color: rgb(245, 248, 250);
     height: 30%;
 }
+.faq {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.1s;
+    width: 50%;
+    margin-left:25%;
+    background-color: white;
+    color: rgb(45, 62, 80);
+}
+.responsePanel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 40%;
+    margin-left:28%;
+    font-size: 18px;
+}
+.arrow {
+    border: solid rgb(0, 164, 189);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 2%;
+  }
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
