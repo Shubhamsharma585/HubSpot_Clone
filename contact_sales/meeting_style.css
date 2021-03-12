@@ -143,3 +143,43 @@ margin-bottom: 40px;
 #meeting-footer>div a:hover{
     color: rgba(131, 192, 241, 0.726);
 }
+
+
+
+/* //////////////////////////////////////////////////////// */
+
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 80%;
+    
+    /* overflow: scroll; */
+  }
+  
+
+#america-calling-nos{
+    margin-bottom: 50px;
+}
+
+
+.america-calling-nos1{
+    display: flex;
+    margin: 25px;
+    
+}
+.america-calling-nos1>div{
+    display: grid;
+    width: 35%;
+}
+.america-calling-nos1 a{
+    color: #009FCB;
+    font-size: 14px;
+    margin: 10px;
+}
+.america-calling-nos1 p{
+font-weight: 500;
+}
