@@ -96,7 +96,7 @@ text-align: center;
     color: white;
     border: none;
     transition: background-color 0.5s ease;
-    
+    margin-left: 20%;
     outline: none;
 }
 #contact-sales-btn1:hover{
@@ -276,3 +276,84 @@ margin-bottom: 0;
     color: rgba(131, 192, 241, 0.726);
 }
 
+
+/* Image of chatbot */
+
+
+.contact-sales-chatbot-header{
+    width: 100%;
+    height: 18vh;
+    background-color: #F5F8FA;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+
+/* Method Boxing for Calling opt Nav */
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: #384f66b0 
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 500px;
+    overflow: scroll;
+  }
+  
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#america-calling-nos{
+    margin-bottom: 50px;
+}
+
+
+.america-calling-nos1{
+    display: flex;
+    margin: 25px;
+    
+}
+.america-calling-nos1>div{
+    display: grid;
+    width: 35%;
+}
+.america-calling-nos1 a{
+    color: #009FCB;
+    font-size: 14px;
+    margin: 10px;
+}
+.america-calling-nos1 p{
+font-weight: 500;
+}
