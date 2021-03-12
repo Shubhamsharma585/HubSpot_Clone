@@ -87,7 +87,7 @@ body {
 
 .lang-nav{
   width: 8%;
-  height: 200px; 
+  height: 250px; 
   margin-right: auto;
   margin-left: 9%;
   margin-top: 30px;
@@ -182,7 +182,9 @@ body {
 
   background-color: #ff7a5979;
   }
-  /*
+  
+
+
   .burger {
     margin-top: 20px;
     margin-right: 10px;
@@ -214,7 +216,7 @@ body {
     padding-top: 30px;
     border-bottom: 1px solid rgb(229, 236, 245);
   }
-*/
+
 
 
   #software:after {    
@@ -775,4 +777,32 @@ padding-top: 7%;
 #homepage-lastPage-page5>.homepage-lastPage-page5-rightSide>img{
   width: 70%;
   margin-left: auto;
+}
+
+
+/* FOOTER STARTS */
+
+
+
+/* FOOTER ENDS */
+
+@media only screen and (max-width: 800px) {
+  nav > ul > li {
+    display: none;
+  }
+  .burger {
+    display: inline;
+    width: 100%;
+    text-align: right;
+    margin-left: 80%;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .burger-menu > li {
+    display: block;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
 }
