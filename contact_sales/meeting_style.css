@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+      /* text-align: center; */
+      color: #33475b;
+      background-color: #fff;
+      margin: 0%;
+      
+    }
+
+#meeting-info{
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid red; */
+    background-color: #385470;
+}
+#meeting-info>h1{
+font-size: 45px;
+font-family: 900;
+width: 60%;
+margin:auto;
+text-align: center;
+color: white;
+padding-top:100px ;
+line-height: 59px;
+}
+#meeting-info>p{
+    font-size: 17px;
+font-family: 400;
+width: 60%;
+margin:auto;
+text-align: center;
+color: white;
+margin-top: 30px;
+margin-bottom: 40px;
+}
+
+#meeting-button-2{
+
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #385470;
+    color: white;
+    border: 1px solid white;
+    transition: background-color 0.5s ease;
+    
+    outline: none;
+    font-weight: 700;
+}
+#meeting-button-2:hover{
+    background-color: white;
+    color: #385470;
+}
+
+#meeting-button-1{
+
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: white;
+    color: #385470;
+    border: none;
+    transition: background-color 0.5s ease;
+    
+    outline: none;
+    font-weight: 700;
+    margin-right: 10px;
+}
+#meeting-button-1:hover{
+    background-color: #82a8c5;
+}
+
+#meeting-info>div{
+    width: 35%;
+    margin: auto;
+}
+
+#call-us-directly{
+    width: 100%;
+    height: 35vh;
+    /* border: 1px solid red; */
+    padding-top: 40px;
+    background-color: rgba(236, 236, 236, 0.466);
+    margin-bottom: 50px;
+}
+#call-us-directly>div{
+    width: 80%;
+    height: 80%;
+    /* border: 1px solid green; */
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    
+}
+#call-us-directly>div>div{
+    width: 40%;
+    /* border: 1px solid black; */
+    height: 100%;
+    
+}
+#call-us-directly>div>.call-us-directly-orange{
+    background: linear-gradient(45deg, #ff7a59, #ff8f59);
+    width: 60%;
+    border-radius: 4px;
+}
+.call-us-option>p{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 45px;
+    text-align: center;
+}
+.call-us-option{
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+#meeting-footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #385470;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+#meeting-footer>div{
+    padding-top: 18px;
+    
+}
+#meeting-footer>div a{
+    color: rgba(255, 255, 255, 0.664);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 10px;
+}
+#meeting-footer>div a:hover{
+    color: rgba(131, 192, 241, 0.726);
+}
