@@ -9,6 +9,7 @@ var setAndUnsetStickyNavbar = () => {
       }
 }
 window.onscroll = function() {setAndUnsetStickyNavbar()}
+/*allignImgOnScroll()*/
 
 function redirectToEvents() {
   window.location = 'https://ir.hubspot.com/events';
@@ -22,7 +23,7 @@ var diff;
 var percentVariation;
 
 function fetchStockValues(){
-  var url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=HUBS&apikey=ZKXHU7OG6GYWPLUZ';
+  var url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=HUBS&apikey= CTUHMWIT73THMIDJ';
   let count = 0;
 fetch(url)
 .then(function (response) {
@@ -180,7 +181,17 @@ let updateEvent = () => {
 let updateLeadershipDetails = () => {
   document.getElementById('titleDisplay').innerHTML = `<div style = "text-align : center; margin-top : 75px;"><h4>${data.titleAndContent.leadershipAndGovernance[0]}</h4>
   <h1>${data.titleAndContent.leadershipAndGovernance[1]}</h1>`;
-  document.getElementById('contentDisplay').innerHTML = '';
+  document.getElementById('contentDisplay').innerHTML = '<div id = "teamView" style = " margin-left: 25%; margin-top : 10%; width : 50%;"><h3 style = "font-size : 20px;">Leadership Team</h3></div>';
+  for(let i = 0; i < data.leadershipTeam.length; i++) {
+    document.getElementById('teamView').innerHTML += `<div class="container">
+    <img src="${data.leadershipTeam[i].imageUrl}" alt="" class="image">
+    <div class="overlay">
+      <div class="text"><p style = "font-size : 12px;">${data.leadershipTeam[i].name}<br/><br/>${data.leadershipTeam[i].position}<br/><br/>
+      <span style = "text-decoration : underline; color : white" class= "cursorShift">Read bio</span>
+      </p></div>
+    </div>
+  </div>`
+  }
  }
 
 let showFaq = () => {
