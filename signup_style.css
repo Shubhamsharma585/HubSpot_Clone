@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir Next W02, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+html,
+body {
+  height: 100%;
+}
+#top_bar {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+}
+#hubspot_logo {
+  float: left;
+}
+#login_link {
+  margin-top: 15px;
+  float: right;
+  margin-left: 900px;
+}
+#login_link {
+  font-size: 15px;
+  text-align: center;
+}
+#login_link a {
+  color: #0091ae;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+#login_link a:hover {
+  text-decoration: underline;
+}
+#middle_bar {
+  height: 700px;
+}
+#signup_left {
+  width: 50%;
+  float: left;
+}
+#image_right {
+  width: 50%;
+  float: left;
+}
+#signup_details {
+  width: 60%;
+  margin: auto;
+  margin-top: 60px;
+}
+.text {
+  color: #33475b;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+#google_login {
+  margin-top: 30px;
+  background-color: rgb(66, 133, 244);
+  border-radius: 0.1875rem;
+  border: none;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 15px;
+}
+#google_login:hover {
+  background-color: #2961c2;
+}
+.feild input {
+  margin-top: 15px;
+  text-align: start;
+  height: 40px;
+  border: none;
+  background-color: #eaf0f6;
+  width: 100%;
+  margin-bottom: 10px;
+}
+input:focus {
+  outline: none !important;
+  border: 1.5px solid #0091ae;
+  box-shadow: 0 0 3px #719ece;
+  border-radius: 2px;
+}
+#signup_button {
+  margin-top: 15px;
+  background-color: #425b76;
+  border-radius: 0.1875rem;
+  border: none;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+#signup_button:hover {
+  background-color: #273544;
+}
+#signup_details a {
+  color: #0091ae;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+#signup_details a:hover {
+  text-decoration: underline;
+}
+#image_right img {
+  height: 400px;
+  width: 350px;
+  margin-left: 180px;
+  margin-top: 50px;
+}
+#image_right h4 {
+  font-size: 25px;
+  color: #33475b;
+  text-align: center;
+  margin-top: 50px;
+}
+#image_right p {
+  color: #33475b;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}

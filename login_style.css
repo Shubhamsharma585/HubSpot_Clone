@@ -1,0 +1,136 @@
+/* Main Container */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir Next W02, Helvetica, Arial, sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+}
+#container {
+  height: 100%;
+  width: 28%;
+  margin: auto;
+  font-weight: 400;
+  font-size: 15px;
+  color: #33475b;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+}
+#hubspot_logo {
+  margin: 60px 30px;
+  margin-bottom: 0;
+}
+#signup_link {
+  font-size: 15px;
+  text-align: center;
+}
+#signup_link a {
+  color: #0091ae;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+#signup_link a:hover {
+  text-decoration: underline;
+}
+.feild input {
+  text-align: start;
+  height: 40px;
+  border: none;
+  background-color: #eaf0f6;
+  width: 100%;
+  margin-bottom: 10px;
+}
+input:focus {
+  outline: none !important;
+  border: 1.5px solid #0091ae;
+  box-shadow: 0 0 3px #719ece;
+  border-radius: 2px;
+}
+#show_password {
+  color: black;
+  color: #0091ae;
+  font-size: 12px;
+  font-weight: 550;
+  text-decoration: none;
+}
+#show_password:hover {
+  text-decoration: underline;
+}
+#forgot_password a {
+  color: black;
+  color: #0091ae;
+  font-size: 12px;
+  font-weight: 550;
+  text-decoration: none;
+}
+#forgot_password:hover {
+  text-decoration: underline;
+}
+#label_name {
+  font-size: 15px;
+  margin-left: 5px;
+}
+#login_button {
+  background-color: #eaf0f6;
+  color: #b0c1d4;
+  border: none;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  padding: 5px;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+#login_button:hover {
+  background-color: #ff8f73;
+  border-color: #ff8f73;
+  color: #fff;
+}
+#google_login {
+  margin-top: 30px;
+  background-color: #5886d4;
+  border-radius: 0.1875rem;
+  border: none;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 15px;
+}
+#google_login:hover {
+  background-color: #2961c2;
+}
+#sso_login {
+  margin-top: 15px;
+  background-color: #425b76;
+  border-color: #425b76;
+  border-radius: 0.1875rem;
+  border: none;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 15px;
+}
+#sso_login:hover {
+  background-color: #384858;
+}
+#privacy_link {
+  color: black;
+  color: #0091ae;
+  font-size: 13px;
+  margin-left: 160px;
+  text-decoration: none;
+}
+#privacy_link:hover {
+  text-decoration: underline;
+}

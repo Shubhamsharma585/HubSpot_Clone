@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+
+    <!-- Starting Login Page -->
+    <div id="container">
+        <div id="hubspot_logo">
+            <img src="https://cdn.worldvectorlogo.com/logos/hubspot.svg" alt="image" height="50px" width="350px">
+        </div>
+        <div id="signup_link">
+            Don't Have an account?
+            <a href="signup.html">SignUp</a>
+        </div>
+        
+
+        <div class="form_inner">
+            <form action="#" class="login">
+                <div class="feild">
+                    <label for="#">Email address</label><br>
+                    <input type="text" id="login_email" required>
+                </div>
+                <div class="feild">
+                    <label for="#">Password</label><br>
+                    <a id="show_password" href="#">Show Password</a><br>
+                    <input type="password" id="login_password" required>
+                </div>
+                <div id="forgot_password">
+                    <a href="#">Forgot Password</a>
+                </div>
+            </form>
+            <input type="checkbox" name="#"><label id="label_name" for="#">Remember Me</label><br>
+            <button id="login_button" onclick="doLogin()">Log in</button>
+            <hr style="margin-top: 30px;color: black;">
+            <div id="google_button">
+                
+            <button id="google_login">Sign In With Google</button>
+
+            </div>
+            <button id="sso_login">Log in with SSO</button>
+            <p style="text-align: center;margin-top: 40px;font-size: 12px;">@2021 HubSpot, Inc.All Rights Reserved.</p>
+            <a href="#" id="privacy_link">Privacy Policy</a>
+        </div>
+
+    </div>
+    <!-- Ending login page -->
+
+    <script src="login.js">
+    </script>
+</body>
+</html>
