@@ -32,8 +32,42 @@
            font-family: sans-serif;
            font-weight: 500;
            color: rgb(85, 85, 85);
-           margin-left: 20%;
+           margin-left: 5%;
         }
+
+        #four
+        {
+            border: solid #00a4bd 2px;
+            border-radius: 2px;
+            width: 50%;
+            margin-left: 25%;
+            cursor: pointer;
+        }
+
+        #four:hover
+        {
+           background-color: rgb(227, 224, 224);
+        }
+
+        
+        .four-b1
+        {
+            display: none;
+            width: 49%;
+            margin-left: 26%;
+            margin-top: -2%;
+            color: rgb(126, 122, 122);
+        }
+
+        .four-b2
+        {
+            display: block;
+            width: 49%;
+            margin-left: 26%;
+            margin-top: -2%;
+            color: rgb(126, 122, 122);
+        }
+
 
         .five
         {
@@ -216,6 +250,27 @@
 <div id="four">
     <p>How to find this office</p>
 </div><br></br>
+
+<div class="four-b1">
+    <p><strong>Driving:</strong> Refer to directions provided by <span style="color: #0091ae;">Google Maps.</span> </p>
+    <p><strong>Transportation:</strong>  The closest option for public transportation is 
+        <span style="color: #0091ae;">Lechmere Station</span>  on MBTA’s Green Line, which is two blocks away and offers 
+        frequent subway and bus service. <span style="color: #0091ae;">Kendall Station,</span> which is on 
+        the MBTA’s Red Line, is also a 10 to 15-minute walk from our office.</p>
+    <p><strong>Parking:</strong> We recommend parking in the First Street Garage, which is right next 
+        door to the office. Entrance is on Spring Street near First Street. Find more 
+        pricing and location information <span style="color: #0091ae;">here.</span></p>
+    <p>The Cambridgeside Galleria parking garage is also an option, though 
+        it can be confusing to navigate for first-time visitors. Entrance is on 
+        First Street between Best Buy and Sears. Find more pricing and location 
+        information <span style="color: #0091ae;">here.</span></p>
+</div>
+
+
+
+
+
+
 
 
 
@@ -508,6 +563,19 @@
 
 
     <script type="text/javascript">
+
+    var how = document.getElementById("four");
+    how.addEventListener("click",fun1);
+
+    function fun1()
+    {
+        var a = event.target.id;
+        console.log(a);
+       var fourb = document.getElementsByClassName("four-b1");
+       fourb[0].setAttribute("class","four-b2");
+    }
+
+
 
     </script>
 
