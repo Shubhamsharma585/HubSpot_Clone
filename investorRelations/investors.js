@@ -85,6 +85,25 @@ function printButtons() {
     }
     //console.log(methodArr[3]);
   }
+let renderModal = () => {
+  let index = Number(event.target.id);
+  var modal = document.getElementById("myModal");
+  var span = document.getElementsByClassName("close")[0];
+  document.getElementById('writeUp').innerHTML = `<img src ='${data.leadershipTeam[index].imageUrl}' 
+  style = "width: 130px;
+  height: 140px;">
+  <span><h3>${data.leadershipTeam[index].name}</h3>${data.leadershipTeam[index].position}
+  <br/><br/>${data.leadershipTeam[index].bio}</span>`
+  modal.style.display = "block";
+  span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+}
 
 let addInvestorOverview = () => {
   var url = ["https://ir.hubspot.com/news/hubspot-reports-q4-and-full-year-2020-results",
@@ -182,16 +201,32 @@ let updateLeadershipDetails = () => {
   document.getElementById('titleDisplay').innerHTML = `<div style = "text-align : center; margin-top : 75px;"><h4>${data.titleAndContent.leadershipAndGovernance[0]}</h4>
   <h1>${data.titleAndContent.leadershipAndGovernance[1]}</h1>`;
   document.getElementById('contentDisplay').innerHTML = '<div id = "teamView" style = " margin-left: 25%; margin-top : 10%; width : 50%;"><h3 style = "font-size : 20px;">Leadership Team</h3></div>';
-  for(let i = 0; i < data.leadershipTeam.length; i++) {
-    document.getElementById('teamView').innerHTML += `<div class="container">
-    <img src="${data.leadershipTeam[i].imageUrl}" alt="" class="image">
-    <div class="overlay">
-      <div class="text"><p style = "font-size : 12px;">${data.leadershipTeam[i].name}<br/><br/>${data.leadershipTeam[i].position}<br/><br/>
-      <span style = "text-decoration : underline; color : white" class= "cursorShift">Read bio</span>
-      </p></div>
+  document.getElementById('contentDisplay').innerHTML += `<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id = 'writeUp'></p>
     </div>
   </div>`
+  for(let i = 0; i < data.leadershipTeam.length; i++) {
+    let paraId = "person_" + i;
+    document.getElementById('teamView').innerHTML += `<div class="container">
+    <img src="${data.leadershipTeam[i].imageUrl}" alt= "${data.leadershipTeam[i].name}" class="image">
+    <div class="overlay">
+      <div class="text"><p id = '${paraId}' style = "font-size : 12px;">${data.leadershipTeam[i].name}<br/><br/>${data.leadershipTeam[i].position}<br/><br/>
+      </p></div>
+    </div>
+  </div>`;
   }
+  for(let i = 0; i < data.leadershipTeam.length; i++) {
+    let paraId = "person_" + i;
+    let link = document.createElement('span');
+    link.setAttribute('class', 'cursorShift');
+    link.setAttribute('id', i);
+    link.onclick = renderModal;
+    link.innerHTML = 'Read bio';
+    document.getElementById(paraId).appendChild(link);
+  }
+
  }
 
 let showFaq = () => {
