@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -8,7 +9,7 @@ body {
     background-color: rgba(232, 255, 253, 0.685);
     margin: 0%;
     padding-top: 80px; 
-    
+    /* padding: 0%; */
   }
 
 
@@ -183,7 +184,7 @@ body {
   background-color: #ff7a5979;
   }
   
-
+/* Burger Menu */
 
   .burger {
     margin-top: 20px;
@@ -782,7 +783,118 @@ padding-top: 7%;
 
 /* FOOTER STARTS */
 
+#hub-footer-cont{
+  width: 100%;
+  height: 60vh;
+  /* border: 1px solid red; */
+  display: flex;
+  background-color: #2D3E50;
+  color: white;
+  
+  
+}
+#hub-footer-cont>div{
+  width: 45%;
+  /* border: 1px solid green; */
+  height: 60vh;
+}
+#hub-footer-cont>.hub-footer-right{
+  width: 55%;
+}
+.hub-footer-left>div{
+  display: grid;
+  width: 35%;
+  
+  
+}
+.footer-left-2{
+  padding-top: 50px;
+  
+}
 
+.footer-left-2,.footer-left-1{
+  text-align: left;
+}
+.footer-right-3,.footer-right-2,.footer-right-1{
+  text-align: left;
+}
+.hub-footer-left{
+  display: flex;
+  justify-content: center;
+}
+.hub-footer-right{
+  display: flex;
+  justify-content: center;
+}
+.hub-footer-right>div{
+  display: grid;
+  width: 33%;
+  
+}
+#footer-content a{
+  font-size: 11px;
+  font-weight: 600;
+  color: #CBD6E2;
+  margin: 9px;
+  
+}
+#footer-content a:hover{
+  color: #72c9f1;
+  
+  text-decoration: underline;
+
+}
+
+#footer-content p{
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  
+  
+}
+.footer-icons{
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  /* border: 1px solid red; */
+  background-color: #2D3E50;
+  color: #CBD6E2;
+}
+.all-the-icons>i{
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.all-the-icons>i:hover{
+  color: #007188;
+}
+.footer-last{
+  width: 100%;
+  height: 20vh;
+  /* border: 1px solid red; */
+  background-color: #2D3E50;
+  text-align: center;
+  color: white;
+}
+.footer-last>div a{
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+.footer-last>div a:hover{
+  color: #72c9f1;
+  text-decoration: none;
+  
+}
+.footer-last>p{
+  font-size: 11px;
+
+
+}
 
 /* FOOTER ENDS */
 
