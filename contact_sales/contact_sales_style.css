@@ -13,7 +13,7 @@
 #contact-sales-top-bar{
 width: 100%;
 height: 60px;
-border: 1px solid red;
+/* border: 1px solid red; */
 background-color: #fff;
 display: flex;
 margin-bottom: 0;
@@ -35,6 +35,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: #33475b;
 }
 #contact-us-about-soft{
     width: 100%;
@@ -47,7 +48,7 @@ a{
     padding-top: 0;
    
 }
-#contact-us-about-soft>div{
+#contact-us-about-soft>.contact-us-about-soft-left{
     width: 40%;
 padding-top: 8%;
 margin-left: 10%;
@@ -59,4 +60,77 @@ margin-left: 10%;
 #contact-us-about-soft>div>p{
     font-size: 13px;
     line-height: 23px;
+    margin-bottom: 40px;
+}
+
+#contact-sales-3boxes{
+    display: flex;
+    justify-content: center;
+}
+
+#contact-sales-3boxes div{
+    width: 25%;
+    height: 300px;
+    /* border: 1px solid red; */
+    margin: 10px;
+    background-color: rgb(240, 255, 254);
+}
+
+#contact-boxes>img{
+    width: 40px;
+    margin: auto;
+}
+.contact-box1,.contact-box2,.contact-box3{
+display: grid;
+justify-content: center;
+text-align: center;
+}
+#contact-sales-btn1{
+
+    width: 150px;
+    height: 33px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff7a59;
+    color: white;
+    border: none;
+    transition: background-color 0.5s ease;
+    
+    outline: none;
+}
+#contact-sales-btn1:hover{
+    background-color: #ff7a5979
+}
+#contact-sales-btn2{
+
+    width: 200px;
+    height: 33px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff7a59;
+    color: white;
+    border: none;
+    transition: background-color 0.5s ease;
+    
+    outline: none;
+}
+#contact-sales-btn2:hover{
+    background-color: #ff7a5979
+}
+#contact-boxes>p{
+    font-size: 20px;
+    font-weight: 600;
+}
+#contact-boxes>.second-para{
+    font-size: 12px;
+    font-weight: 400;
+}
+.contact-box1>p{
+margin-bottom: 0;
+}
+.contact-box1>a{
+    font-size: 20px;
+    font-weight: 500;
 }
