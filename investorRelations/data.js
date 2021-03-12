@@ -56,3 +56,33 @@ export var faqs = [
 ["How do I contact Investor Relations with a question or request?",
 "You can contact HubSpot Investor Relations via email at: investors@hubspot.com."]
 ]
+
+export var newsHeaderDateAndRedirectLink = [
+    ["HubSpot's CEO Brian Halligan Injured in Accident; Expected to Make a Full and Complete Recovery",
+"March 1, 2021", 
+"https://ir.hubspot.com/news/hubspots-ceo-brian-halligan-injured-in-accident-expected-to-make-a-full-and-complete-recovery?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"],
+["HubSpot to Present at the Morgan Stanley Technology Conference",
+"February 24, 2021",
+"https://ir.hubspot.com/news/hubspot-to-present-at-the-morgan-stanley-technology-conference?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"],
+["HubSpot’s Statement Regarding Unauthorized iClick Press Release", "February 23, 2021",
+"https://ir.hubspot.com/news/hubspots-statement-regarding-unauthorized-iclick-press-release?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"
+],
+["HubSpot Announces $20 Million Commitment to Social Impact Investing", "February 16, 2021",
+"https://ir.hubspot.com/news/hubspot-announces-20-million-commitment-to-social-impact-investing?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"],
+["HubSpot Signs Agreement to Acquire The Hustle, Adding Content to Help Scaling Companies Grow Better",
+"February 16, 2021",
+"https://ir.hubspot.com/news/hubspot-signs-agreement-to-acquire-the-hustle-adding-content-to-help-scaling-companies-grow-better?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"
+],
+["HubSpot Surpasses 100,000 Customers and $1 Billion in Annual Recurring Revenue, Celebrates the Companies Using its CRM Platform to Scale",
+"February 16, 2021",
+"https://ir.hubspot.com/news/hubspot-surpasses-100000-customers-and-1-billion-in-annual-recurring-revenue?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"
+],
+["HubSpot Reports Q4 and Full Year 2020 Results",
+"February 11, 2021",
+"https://ir.hubspot.com/news/hubspot-reports-q4-and-full-year-2020-results?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"
+],
+["HubSpot Announces Date of Fourth Quarter and Full Year 2020 Financial Results Release",
+"January 28, 2021",
+"https://ir.hubspot.com/news/hubspot-announces-date-of-fourth-quarter-and-full-year-2020-financial-results-release?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"
+]
+]

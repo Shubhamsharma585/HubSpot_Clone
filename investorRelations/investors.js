@@ -161,17 +161,28 @@ let addNews = () => {
   document.getElementById('titleDisplay').innerHTML = `<div style = "text-align : center; margin-top : 75px;"><h4>${data.titleAndContent.news[0]}</h4>
   <h1>${data.titleAndContent.news[1]}</h1>`;
   document.getElementById('contentDisplay').innerHTML = '';
+  document.getElementById('contentDisplay').innerHTML = `<div id = "newsDisp" style = "width : 45%; margin-left : 25%;margin-top : 5%;"></div>`;
+  document.getElementById('newsDisp').innerHTML = '';
+  for(let i = 0; i < data.newsHeaderDateAndRedirectLink.length; i++) {
+    document.getElementById('newsDisp').innerHTML += `<h3 style = "font-weight : bolder;">${data.newsHeaderDateAndRedirectLink[i][0]}</h6>
+    <p style = "font-size : 15px;">${data.newsHeaderDateAndRedirectLink[i][1]}</p>
+    <a href = "${data.newsHeaderDateAndRedirectLink[i][1]}" style = "font-weight : bolder;">Read more</a>
+    <br/><br/>`;
+  }
  }
 let updateEvent = () => {
   document.getElementById('titleDisplay').innerHTML = `<div style = "text-align : center; margin-top : 75px;"><h4>${data.titleAndContent.eventsAndPresentations[0]}</h4>
   <h1>${data.titleAndContent.eventsAndPresentations[1]}</h1>`;
   document.getElementById('contentDisplay').innerHTML = '';
+
  }
+
 let updateLeadershipDetails = () => {
   document.getElementById('titleDisplay').innerHTML = `<div style = "text-align : center; margin-top : 75px;"><h4>${data.titleAndContent.leadershipAndGovernance[0]}</h4>
   <h1>${data.titleAndContent.leadershipAndGovernance[1]}</h1>`;
   document.getElementById('contentDisplay').innerHTML = '';
  }
+
 let showFaq = () => {
   document.getElementById('titleDisplay').innerHTML = `<div style = "text-align : center; margin-top : 75px;"><h4>${data.titleAndContent.faq[0]}</h4>
   <h1>${data.titleAndContent.faq[1]}</h1>`;
