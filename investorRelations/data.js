@@ -60,7 +60,7 @@ export var faqs = [
 export var newsHeaderDateAndRedirectLink = [
     ["HubSpot's CEO Brian Halligan Injured in Accident; Expected to Make a Full and Complete Recovery",
 "March 1, 2021", 
-"https://ir.hubspot.com/news/hubspots-ceo-brian-halligan-injured-in-accident-expected-to-make-a-full-and-complete-recovery?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"],
+"https://ir.hubspot.com/news/hubspots-ceo-brian-halligan-injured-in-accident-expected-to-make-a-full-and-complete-recovery"],
 ["HubSpot to Present at the Morgan Stanley Technology Conference",
 "February 24, 2021",
 "https://ir.hubspot.com/news/hubspot-to-present-at-the-morgan-stanley-technology-conference?_conv_v=vi%3A1*sc%3A19*cs%3A1615507965*fs%3A1615266828*pv%3A126*seg%3A%7B10031564.1%7D*exp%3A%7B%7D*ps%3A1615505597&_conv_s=si%3A19*sh%3A1615507965088-0.8164349457319278*pv%3A10"],

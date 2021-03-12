@@ -147,7 +147,7 @@ let addInvestorOverview = () => {
   </div>
   </div>`;
   document.getElementById('contentDisplay').innerHTML += `<div style = "margin-top : 8%;
-   margin-left : 28%; border : 1px solid black; width: 45%"; padding: 5%;">
+   margin-left : 28%; width: 45%"; padding: 5%;">
   <h3 style = "font-size : 23px;">SEC Filing</h3>
   <hr/>
   <table id = "pagination"></table>
@@ -166,7 +166,7 @@ let addNews = () => {
   for(let i = 0; i < data.newsHeaderDateAndRedirectLink.length; i++) {
     document.getElementById('newsDisp').innerHTML += `<h3 style = "font-weight : bolder;">${data.newsHeaderDateAndRedirectLink[i][0]}</h6>
     <p style = "font-size : 15px;">${data.newsHeaderDateAndRedirectLink[i][1]}</p>
-    <a href = "${data.newsHeaderDateAndRedirectLink[i][1]}" style = "font-weight : bolder;">Read more</a>
+    <a href = "${data.newsHeaderDateAndRedirectLink[i][2]}" style = "font-weight : bolder;">Read more</a>
     <br/><br/>`;
   }
  }
