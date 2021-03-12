@@ -35,7 +35,7 @@ body {
     height: 50%;
     background-image: url('../imgs/investorRelBgnd.png');
     color: white;
-    margin: auto;
+    margin: 0;
     padding-top: 5%;
 }
 #minorNavBar {
@@ -55,7 +55,7 @@ body {
     font-size: 18px;
     color: #33475b;
     font-weight: bold;
-    margin: auto;
+    margin-bottom: 0;
 }
 #minorNavBar > div > div > p {
     text-align: center;
@@ -63,6 +63,7 @@ body {
 #minorNavBar > div > div:hover {
     background-color: rgb(234, 240, 246);
     cursor: pointer;
+    border-bottom: 5px solid rgb(255, 122, 89);
 }
 #minorNavBar > div {
     margin-left: 8%;
