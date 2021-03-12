@@ -39,7 +39,7 @@ a{
 }
 #contact-us-about-soft{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url("https://f.hubspotusercontent00.net/hubfs/53/assets/hubspot.com/contact-sales/Hubspot-Santa-Cruz-web-6@2x-compressor-2-1.png");
     background-size: 48%;
     background-repeat: no-repeat;
@@ -134,3 +134,121 @@ margin-bottom: 0;
     font-size: 20px;
     font-weight: 500;
 }
+
+/* Book a Metting */
+
+
+
+
+/* .request-demo-form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+} */
+
+
+
+.form-h1-p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.form-h1-p>p{
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.meeting-form-p2{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 20px;
+}
+.meeting-form-p2>p{
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+
+.required-star::after {
+    content: " *";
+    color: red;
+}
+
+.meeting-form-btn3{
+    width: 20%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+#contact-sales-btn3{
+
+    width: 130px;
+    height: 38px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff7a59;
+    color: white;
+    border: none;
+    transition: background-color 0.5s ease;
+    
+    outline: none;
+}
+#contact-sales-btn3:hover{
+    background-color: #ff7a5979
+}
+
+
+#book-meeting-cont{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+
+}
+.book-meating-box{
+    width: 50%;
+    margin: auto;
+    /* height: 100vh; */
+    /* border: 1px solid green; */
+    box-shadow: 0px 0px 15px 10px rgb(179 179 179 / 14%);
+}
+
+.book-meating-box>form{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+}
+
+#first-nam,#last-nam,#mail-id,#phone-no,#company-nam,#website-url,#employee-size,#country_dropdown,#feedback{
+    display: block;
+    margin-top: 10px;
+    background-color: rgba(240, 240, 240, 0.568);
+}
+#first-nam,#last-nam,#mail-id,#phone-no,#company-nam,#website-url{
+    width: 85%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #8b8b8bbd;
+    font-size: 15px;
+}
+
+#employee-size,#country_dropdown,#feedback{
+    width: 84.5%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #8b8b8bbd;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.book-meating-box>.last-three-input-in-meeting{
+   margin-left: 9%;
+   
+}
+
+
