@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Contact</title>
+
+    <style type="text/css">
+
+       #header
+       {
+          position: fixed;
+          margin-top: -10px;
+          float: left;
+       }
+
+       #one
+       {
+           margin-top: 50px;
+           float: left;
+       }
+
+
+        #two
+        {
+            margin: auto;
+            text-align: center;
+        }
+
+        #two > p
+        {
+           font-size: 22px;
+           font-family: sans-serif;
+           font-weight: 800;
+           color: rgb(60, 59, 59);
+        }
+
+        #three
+        {
+            margin: auto;
+            text-align: center;
+        }
+
+        #four > p
+        {
+           font-size: 18px;
+           font-family: sans-serif;
+           font-weight: 500;
+           color: rgb(85, 85, 85);
+           margin-left: 5%;
+        }
+
+        #four
+        {
+            border: solid #00a4bd 2px;
+            border-radius: 2px;
+            width: 50%;
+            margin-left: 25%;
+            cursor: pointer;
+        }
+
+        #four:hover
+        {
+           background-color: rgb(227, 224, 224);
+        }
+
+        
+        .four-b1
+        {
+            display: none;
+            width: 49%;
+            margin-left: 26%;
+            margin-top: -2%;
+            color: rgb(126, 122, 122);
+        }
+
+        .four-b2
+        {
+            display: block;
+            width: 49%;
+            margin-left: 26%;
+            margin-top: -2%;
+            color: rgb(126, 122, 122);
+        }
+
+
+        .five
+        {
+           background-color: #f5f8fa;
+           width: 100vw;
+           
+        }
+
+        #five-box
+        {   
+           padding-top: 5%;
+           padding-bottom: 15%;
+           margin-left: 15%; 
+           margin-right: 15%;
+           display: grid;
+           gap: 15%;
+           grid-template: "a b"
+                          "c d";
+        }
+
+        #five-box-left
+        {
+          grid-area: a;
+        }
+
+
+        #five-box-right
+        {
+           grid-area: b;
+        }
+
+        #five-box-right > p
+        {
+           font-family: sans-serif;
+
+        }
+
+        #b1-1
+        {
+           color: rgb(87, 86, 86);
+           font-weight: 580;
+        }
+
+
+        #b1-3
+        {
+           color: rgb(118, 116, 116);
+           font-weight: 200;
+        }
+
+        #c
+        {
+            grid-area: c;
+        }
+
+        #c > p
+        {
+            font-family: sans-serif;
+        }
+
+        #d 
+        { 
+            grid-area: d;
+        }
+
+    #six
+    {
+    margin: auto;
+    text-align: center;
+    }
+
+    #six > p
+    {
+     font-size: 22px;
+      font-family: sans-serif;
+     font-weight: 800;
+     color: rgb(60, 59, 59);
+     }    
+
+
+#seven-h
+{
+   text-align: center;
+   font-family: sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+   color: rgb(94, 93, 93);
+
+}
+
+#seven-b
+{
+    font-family: sans-serif;
+    margin-top: 6%;
+}
+
+
+#seven-b > div
+{
+    float: left;
+    margin-left: 10%;
+    margin-right: 1%;
+    margin-bottom: 10%;
+}
+
+#seven-b2
+{
+    float: left;
+}
+
+#s-1
+{
+    font-weight: 600;
+}
+
+#s-2
+{
+    color: rgb(131, 129, 129);
+    font-weight: 300;
+}
+
+#eight-h
+{
+    float: left;
+    margin-top: 10%;
+    text-align: center;
+   font-family: sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+   color: rgb(94, 93, 93);
+}
+
+#eight-b
+{
+   float: left;
+   margin-top: 2%;
+}
+
+
+#eight-b > div
+{
+    float: left;
+    margin-left: 20%;
+    margin-right: 1%;
+    margin-bottom: 10%;
+}
+
+
+#nine-h
+{
+    float: left;
+    margin-top: 40%;
+    margin-left: -16%;
+    text-align: center;
+   font-family: sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+   color: rgb(94, 93, 93);
+}
+
+
+/* footer's css below */
+
+
+     .footer-cont
+     {
+         background-color: #2d3e50;
+         color: #cbd6e2;
+         font-size: 12px;
+         font-family: sans-serif;
+         text-align: left;
+         padding-top: 30px;
+         height: 50vw;
+         width: 100%;
+         display: grid;
+         gap: 5%;
+         grid-template: "a b c d e"
+                         "f f f f f";
+         grid-template-rows: 45%;                
+     }
+
+     #footer-hub
+     {
+       margin-top: -0px;
+     }
+
+     .footer-cont div ul li
+     {
+         list-style-type: none;
+         margin-top: 7%;
+     }
+
+     .footer-cont div ul li:hover
+     {
+         color: #7fd1de;
+         cursor: pointer;
+     }
+
+
+     .footer-cont div label
+     {
+        margin-left: 18%;
+        font-size: 15px;
+     }
+
+
+
+     #lone
+     {
+         grid-area: a;
+         
+     }
+
+     #ltwo
+     {
+         grid-area: b;
+     }
+
+     #lthree
+     {
+         grid-area: c;
+     }
+
+     #lfour
+     {
+         grid-area: d;
+     }
+
+     #lfive
+     {
+         grid-area: e;
+     }
+
+
+     
+     #footer-social
+     {
+         text-align: center;
+         height: 50px;
+         width: 100%;
+         grid-area: f;
+         margin-top: 5%;
+     }
+
+
+     #footer-hub1
+     {
+         margin-left: -3%;
+         color: rgb(255, 255, 255);
+     }
+
+     #footer-hub3 
+     {
+         
+         margin-left: -3%;
+         color: rgb(255, 255, 255);
+     }
+     
+
+     #footer-hub3 ul li 
+     {
+         margin-top: 0;
+         color: #cbd6e2;
+         display: inline;
+         text-align: center;
+         margin-left: 1%;
+     }
+
+     #footer-hub3 ul li p
+     {
+         color: #cbd6e2;
+         display: inline;
+     }
+
+     .social
+     {
+         display: flex;
+         justify-content: center;
+     }
+     
+     
+     #footer-social > div > a
+     {
+        display: flex;
+        /* background-color: red; */
+        background-color: #2d3e50;
+        width: 75px;
+        height: 40px;
+     }
+
+
+     a i 
+     {
+         font-size: 35px;
+         color: #cbd6e2;
+
+     }
+
+     a:hover i
+     {
+        transform: scale(0.9);
+     }
+
+     a:hover .fa-facebook
+     {
+         color: #3b5698;
+     }
+     a:hover .fa-twitter
+     {
+         color: #3b67;
+     }
+     a:hover .fa-instagram
+     {
+         color: #c32aa3;
+     }
+     a:hover .fa-youtube
+     {
+         color: #3b5;
+     }
+     a:hover .fa-linkedin
+     {
+         color: rgba(53, 9, 50, 0.6);
+     }
+
+/* footer's css above */
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div id="header">
+        <img src="./images/contact/header.png" width="100%"/>
+</div>   
+<div id="one">
+    <img src="./images/contact/contact1.png" width="100%"/>
+</div><br></br>
+
+
+<div id="two">
+    <p>Connect with one of our global offices</p>
+</div><br></br>
+
+
+<div id="three">
+     <a href="https://www.google.com/maps/place/Masai+School/@12.9333256,77.6098732,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae1525f3226a65:0x9d0c72b3bd41f2ef!8m2!3d12.9333256!4d77.6120619"><img src="./images/contact/contact-map.png" alt="map"></a>
+</div><br></br><br></br>
+
+<div id="four">
+    <p>How to find this office</p>
+</div><br></br>
+
+<div class="four-b1">
+    <p><strong>Driving:</strong> Refer to directions provided by <span style="color: #0091ae;">Google Maps.</span> </p>
+    <p><strong>Transportation:</strong>  The closest option for public transportation is 
+        <span style="color: #0091ae;">Lechmere Station</span>  on MBTA’s Green Line, which is two blocks away and offers 
+        frequent subway and bus service. <span style="color: #0091ae;">Kendall Station,</span> which is on 
+        the MBTA’s Red Line, is also a 10 to 15-minute walk from our office.</p>
+    <p><strong>Parking:</strong> We recommend parking in the First Street Garage, which is right next 
+        door to the office. Entrance is on Spring Street near First Street. Find more 
+        pricing and location information <span style="color: #0091ae;">here.</span></p>
+    <p>The Cambridgeside Galleria parking garage is also an option, though 
+        it can be confusing to navigate for first-time visitors. Entrance is on 
+        First Street between Best Buy and Sears. Find more pricing and location 
+        information <span style="color: #0091ae;">here.</span></p>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="five">
+
+    <!-- 1st 4 -->
+     <div id="five-box">
+         <div id="five-box-left">
+             <img src="./images/contact/mid/1.png"/>
+         </div>
+         <div id="five-box-right">
+            <p id="b1-1">Portsmouth, NH (U.S. Office)</p>
+            <p id="b1-1">Address</p>
+            <p id="b1-3">1 Harbour Pl, Suite 175</p>
+            <p id="b1-3">Portsmouth, NH 03801</p>
+            <p id="b1-3">United States</p>
+            
+            <p id="b1-1">Phone</p>
+            <p id="b1-3">1 888 HUBSPOT</p>
+         </div>
+
+
+
+         <div id="d">
+            <img src="./images/contact/mid/2.png"/>
+        </div>
+        <div id="c">
+           <p id="b1-1">Dublin (European HQ)</p>
+           <p id="b1-1">Address</p>
+           <p id="b1-3">Ground Floor, Two Dockland Central</p>
+           <p id="b1-3">Guild Street, Dublin 1 </p>
+           
+           <p id="b1-1">Phone</p>
+           <p id="b1-3">+353 1 5187500</p>
+        </div>
+     </div>
+
+     
+     <!-- 2nd -->
+     <div id="five-box">
+        <div id="five-box-left">
+            <img src="./images/contact/mid/3.png"/>
+        </div>
+        <div id="five-box-right">
+            <p id="b1-1">Singapore (Asia-Pacific HQ)</p>
+            <p id="b1-1">Address</p>
+            <p id="b1-3">60 Anson Road</p>
+            <p id="b1-3">Mapletree Anson, #10-03</p>
+            <p id="b1-3">Singapore 079914</p>
+            
+            <p id="b1-1">Phone</p>
+            <p id="b1-3">+65 800 852 3301</p>
+        </div>
+
+
+
+       <div id="d">
+           <img src="./images/contact/mid/4.png"/>
+       </div>
+       <div id="c">
+          <p id="b1-1">Sydney (Australia Office)</p>
+          <p id="b1-1">Address</p>
+          <p id="b1-3">Sydney NSW 2000</p>
+
+          <p id="b1-1">Phone</p>
+          <p id="b1-3">+61 1300 482 7768</p>
+       </div>
+    </div>
+
+
+    <!-- 3rd -->
+    <div id="five-box">
+        <div id="five-box-left">
+            <img src="./images/contact/mid/5.png"/>
+        </div>
+        <div id="five-box-right">
+           <p id="b1-1">Tokyo (Japan Office)</p>
+           <p id="b1-1">Address</p>
+           <p id="b1-3">ShinOtemachi Building 3F xLink 103, 2-2-1</p>
+           <p id="b1-3">Otemachi,</p>
+           <p id="b1-3">Chiyoda-ku, Tokyo 100-0004, Japan</p>
+           
+           <p id="b1-1">Phone</p>
+           <p id="b1-3">+81 3 6863 5293</p>
+        </div>
+
+
+
+       <div id="d">
+           <img src="./images/contact/mid/6.png"/>
+       </div>
+       <div id="c">
+          <p id="b1-1">Berlin (Berlin Office)</p>
+          <p id="b1-1">Address</p>
+          <p id="b1-3">HubSpot Germany GmbH</p>
+          <p id="b1-3">Am Postbahnhof 17</p>
+          <p id="b1-3">10243 Berlin</p>
+          
+          <p id="b1-1">Phone</p>
+          <p id="b1-3">+49 30 56796549</p>
+       </div>
+    </div>
+
+ 
+    <!-- 4th -->
+    <div id="five-box">
+        <div id="five-box-left">
+            <img src="./images/contact/mid/7.png"/>
+        </div>
+        <div id="five-box-right">
+           <p id="b1-1">Bogotá (Latin American HQ)</p>
+           <p id="b1-1">Address</p>
+           <p id="b1-3">Carrera 12a #78-40, </p>
+           <p id="b1-3">9th Floor</p>
+           <p id="b1-3">Bogotá, Colombia</p>
+           
+           <p id="b1-1">Phone</p>
+           <p>+57 1 381 6808</p>
+        </div>
+
+
+
+       <div id="d">
+           <img src="./images/contact/mid/8.png"/>
+       </div>
+       <div id="c">
+          <p id="b1-1">Paris (Paris Office)</p>
+          <p id="b1-1">Address</p>
+          <p id="b1-3">277 Rue Saint-Honoré</p>
+          <p id="b1-3">3e étage</p>
+          <p id="b1-3">75008 Paris</p>
+          <p id="b1-3">France</p>
+          
+          <p id="b1-1">Phone</p>
+          <p id="b1-3">+33 1 86 26 07 91</p>
+       </div>
+    </div>
+
+    <!-- 5th -->
+    <div id="five-box">
+        <div id="five-box-left">
+            <img src="./images/contact/mid/9.png"/>
+        </div>
+        <div id="five-box-right">
+           <p id="b1-1">Ghent (Belgium Office) - PieSync</p>
+           <p id="b1-1">Address</p>
+           <p id="b1-3">Notarisstraat 1</p>
+           <p id="b1-3">B - 9000 Ghent</p>
+           <p id="b1-3">Belgium</p>
+           
+           <p id="b1-1">Phone</p>
+           <p id="b1-3">+32 932 00398</p>
+        </div>
+
+
+
+       <div id="d">
+           <img src="./images/contact/mid/10.png"/>
+       </div>
+       <div id="c">
+          <p id="b1-1">San Francisco</p>
+          <p id="b1-1">Address</p>
+          <p id="b1-3">400 Montgomery St, Level 10 </p>
+          <p id="b1-3">San Francisco, CA 94111</p>
+          <p id="b1-3">United States</p>
+          
+       </div>
+    </div>
+</div><br></br><br></br>
+
+<div id="six">
+    <p>Call Sales using one of our local numbers</p>
+</div><br></br>
+
+
+
+<div id="seven-h">
+    <p>Americas</p>
+</div>
+
+<div id="seven-b">
+    <div id="seven-b1" style="margin-bottom: -5%;">
+     <p id="s-1">U.S. and Canada</p>
+     <p id="s-2">+1 877 683 0497 (English)</p>
+     <p id="s-2">+1 857 829 5064 (Spanish)</p>
+    </div>
+
+    <div id="seven-b2">
+        <p id="s-1">Brazil</p>
+        <p id="s-2">+55 21 2018 1092 (Portuguese)</p>
+    </div>
+
+    <div id="seven-b3">
+        <p id="s-1">Chile</p>
+        <p id="s-2">+56 2 2582 3853 (Spanish)</p>
+    </div>
+
+    <div id="seven-b4">
+        <p id="s-1">Colombia</p>
+        <p id="s-2">+57 1 381 9242 (Spanish)</p>
+    </div>
+
+    <div id="seven-b5">
+        <p id="s-1">Mexico</p>
+        <p id="s-2">+56 55 8525 9498 (Spanish)</p>
+    </div>
+</div><br>
+
+
+<div class="break"></div>
+
+
+
+
+<div id="eight-h">
+    <p>Europe</p>
+</div>
+  
+<div id="eight-b">
+    <div id="seven-b1" style="margin-bottom: -5%;">
+     <p id="s-1">Austria</p>
+     <p id="s-2">+1 877 683 0497 (German)</p>
+     <p id="s-2">+1 857 829 5064 (English)</p>
+    </div>
+
+    <div id="seven-b2">
+        <p id="s-1">Belgium</p>
+        <p id="s-2">+1 877 683 0497 (French)</p>
+        <p id="s-2">+1 857 829 5064 (English)</p>
+    </div>
+
+    <div id="seven-b3">
+        <p id="s-1">Denmark</p>
+        <p id="s-2">+56 2 2582 3853 (English)</p>
+    </div>
+
+    <div id="seven-b4">
+        <p id="s-1">Finland</p>
+        <p id="s-2">+57 1 381 9242 (English)</p>
+    </div>
+
+    <div id="seven-b5">
+        <p id="s-1">France</p>
+        <p id="s-2">+1 877 683 0497 (English))</p>
+        <p id="s-2">+1 857 829 5064 (French)</p>
+    </div>
+</div>
+
+
+
+<div id="nine-h">
+    <p>Asia Pacific</p>
+</div><br></br>
+
+
+<div id="eight-b">
+    <div id="seven-b1" style="margin-bottom: -5%;">
+     <p id="s-1">Austria</p>
+     <p id="s-2">+1 877 683 0497 (German)</p>
+     <p id="s-2">+1 857 829 5064 (English)</p>
+    </div>
+
+    <div id="seven-b2">
+        <p id="s-1">Belgium</p>
+        <p id="s-2">+1 877 683 0497 (French)</p>
+        <p id="s-2">+1 857 829 5064 (English)</p>
+    </div>
+
+    <div id="seven-b3">
+        <p id="s-1">Denmark</p>
+        <p id="s-2">+56 2 2582 3853 (English)</p>
+    </div>
+
+    <div id="seven-b4">
+        <p id="s-1">Finland</p>
+        <p id="s-2">+57 1 381 9242 (English)</p>
+    </div>
+
+    <div id="seven-b5">
+        <p id="s-1">France</p>
+        <p id="s-2">+1 877 683 0497 (English))</p>
+        <p id="s-2">+1 857 829 5064 (French)</p>
+    </div>
+</div><br></br>
+
+
+
+
+<!-- footer of page -->
+
+<div id="footer-box">
+    <div class="footer-cont">
+        <div id="lone">
+        <label>Popular Features</label>
+        <ul>
+           <li>Free Meeting Scheduler App</li>
+           <li>Social Media Tools</li>
+           <li>Email Tracking Software</li>
+           <li>Sales Email Automation</li>
+           <li>Ads Software</li>
+           <li>Email Marketing Software</li>
+           <li>Lead Management Software</li>
+           <li>Pipeline Management Tools</li>
+        </ul>
+       </div>
+    
+
+         <div id="ltwo">
+         <label></label>
+         <ul>
+             <li>Sales Email Templates</li>
+             <li>Help Desk Software</li>
+             <li>Free Online Form Builder</li>
+             <li>Free Chatbot Builder</li>
+             <li>Free Live Chat Software</li>
+             <li>Marketing Analytics</li>
+             <li>Free Landing Page Builder</li>
+             <li>PieSync Integrations</li>
+         </ul>
+        </div>
+
+
+         <div id="lthree">
+         <label>Free Tools</label>
+         <ul>
+         <li>Website Grader</li>
+         <li>Make My Persona</li>
+         <li>Email Signature Generator</li>
+         <li>Blog Ideas Generator</li>
+         <li>Invoice Template Generator</li>
+         <li>Marketing Plan Generator</li>
+         <li>Free Business Templates</li>
+         <li>Industry Benchmark Data</li>
+         <li>Software Comparisons Library</li>
+        </ul>
+        </div>
+
+
+
+         <div id="lfour">
+         <label>Company</label>
+        <ul>
+         <li>About Us</li>
+         <li>Careers</li>
+         <li>Management Team</li>
+         <li>Board of Directors</li>
+         <li>Investor Relations</li>
+         <li>Blog</li>
+         <li>Contact Us</li>
+        </ul>
+        </div>  
+
+
+        <div id="lfive">
+         <label>Customers</label>
+        <ul>
+         <li>Customer Support</li>
+         <li>Join a Local User Group</li>
+        </ul>
+
+
+         <label>Partners</label>
+        <ul>
+         <li>All Partner Programs</li>
+         <li>Solutions Partner Program</li>
+         <li>App Partner Program</li>
+         <li>HubSpot for Startups</li>
+         <li>Affiliate Program</li>
+        </ul>
+        </div><br></br>
+
+
+
+
+        <div id="footer-social">
+             <div class="social">
+                <!-- i stands for icon -->
+                 <a href="https://facebook.com"><i class="fab fa-facebook"> </i></a> 
+                 <a href="https://twitter.com"><i class="fab fa-twitter"> </i></a> 
+                 <a href="https://instagram.com"><i class="fab fa-instagram"> </i></a> 
+                 <a href="https://youtube.com"><i class="fab fa-youtube"> </i></a>
+                 <a href="https://linkedin.com"><i class="fab fa-linkedin"> </i></a>  
+
+             </div><br><br/>
+
+
+            <div id="footer-hub">
+                <div id="footer-hub1">
+                   <a href="#"><img src="https://cdn2.hubspot.net/hubfs/53/app%20store%20high%20res.png" alt="app store" width="10%"/></a>
+                   <a href="#"><img src="https://cdn2.hubspot.net/hubfs/53/google%20play%20high%20res.png" alt="play store" width="11%"/></a>
+                </div><br></br><br></br>
+
+
+                <div id="footer-hub2">
+                    <img  
+                    alt="HubSpot Logo" src="https://www.hubspot.com/hubfs/WBZ-1165%20Global%20Nav%20Redesign/Wordmark-White.svg">
+                    <p>Copyright © 2021 HubSpot, Inc.</p>
+                    
+                </div><br>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<!-- footer of page -->
+
+
+    <script type="text/javascript">
+
+    var how = document.getElementById("four");
+    how.addEventListener("click",fun1);
+
+    function fun1()
+    {
+        var a = event.target.id;
+        console.log(a);
+       var fourb = document.getElementsByClassName("four-b1");
+       fourb[0].setAttribute("class","four-b2");
+    }
+
+
+
+ </script>
+<script src="//www.hubspot.com/wt-assets/static-files/2611/messaging-functions/scripts.js" type="text/javascript" nonce="ODk1NzQ2MzI0LDI5Njc3NTY5MDQ="></script>
+
+<script type="text/javascript" src="https://static.hsappstatic.net/affiliates-landing-embed/ex/referral.js" nonce="ODk1NzQ2MzI0LDI5Njc3NTY5MDQ="></script>
+
+<script src="https://widget.altrulabs.com/main.js" data-altru-widget-id="7045" async nonce="ODk1NzQ2MzI0LDI5Njc3NTY5MDQ="></script>
+  
+<script src="https://www.hubspot.com/wt-assets/static-files/2695/careers/scripts.js" nonce="ODk1NzQ2MzI0LDI5Njc3NTY5MDQ="></script>
+
+</body>
+</html>
