@@ -173,4 +173,30 @@ export var leadershipTeam = [
         bio :"Whitney Sorenson is the Chief Architect of HubSpot, where he is responsible for leading HubSpot’s engineering teams and technical strategy."
     }
 ]
-export var boardOfDirectors = [];
+export var pastEvents = [
+    {
+        title : "Morgan Stanley Technology Conference",
+        date : "March 2, 2021",
+        links : "<a href = 'https://protect-us.mimecast.com/s/x1LhC68Mr0cnQGDPipj4Yz?domain=cvent.com'>Webcast</a>"
+    },
+    {
+        title : "Fourth Quarter 2020 Financial Results",
+        date : "February 11, 2021",
+        links : "<a href = 'https://event.on24.com/wcc/r/2944718/5135E09BE311B16FD07FA8CC10D25020'>Webcast</a> | <a href = 'https://ir.hubspot.com/hubfs/Q4%202020%20Earnings%20Call_Corrected%20Transcript_2021-02-11-20-36-05.pdf'>Transcript</a>|<a href = 'https://f.hubspotusercontent20.net/hubfs/421676/Investor%20Presentation%20Q420.pdf'>Slides</a>"
+    },
+    {
+        title : "RBC Technology Conference",
+        date : "November 17, 2020",
+        links : "<a href = 'https://event.on24.com/wcc/r/2826850/866A2EB983439299233658407B99E14D'>Webcast</a> | <a href = 'https://f.hubspotusercontent20.net/hubfs/421676/HUBS_RBC_Technology_Conference_Transcript.pdf'>Transcript</a>"
+    },
+    {
+        title : "Third Quarter 2020 Financial Results Webcast",
+        date : "November 5, 2020",
+        links : "<a href = 'http://www.directeventreg.com/registration/event/8694405'>Webcast</a> | <a href = 'https://f.hubspotusercontent00.net/hubfs/53/Q3%202020%20Earnings%20Call_Corrected%20Transcript_2020-11-05-20-16-06%20(1).pdf'>Transcript</a>"
+    }, 
+    {
+        title : "HubSpot 2020 Analyst Day",
+        date : "September 22, 2020",
+        links : "<a href = 'https://www.youtube.com/playlist?list=PLlw9qxNtFom36T7YLgMnfrVntYYAp5E1q'>Webcast</a> | <a href = 'https://f.hubspotusercontent00.net/hubfs/53/Analyst%20Day%202020%20Presentations/Analyst%20Day%202020%20Presentations.pdf'>Slides</a>"
+    }
+]

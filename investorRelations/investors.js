@@ -194,7 +194,36 @@ let updateEvent = () => {
   document.getElementById('titleDisplay').innerHTML = `<div style = "text-align : center; margin-top : 75px;"><h4>${data.titleAndContent.eventsAndPresentations[0]}</h4>
   <h1>${data.titleAndContent.eventsAndPresentations[1]}</h1>`;
   document.getElementById('contentDisplay').innerHTML = '';
-
+  document.getElementById('contentDisplay').innerHTML = `<div>
+  <div style = "background-color : rgb(245, 248, 250); width : 275px; height: 240px; border : 1px solid  gainsboro; margin : auto; margin-top : 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); float : left; margin-left :25%;">
+  <h3 style = "color : #33475b; font-size : 20px; margin-left : 15%; ">Investor Presentation</h3>
+  <p style = "text-align : center; font-size: 24px; margin-left : 4%;"> Fourth Quarter 2020 
+  Investor Marketing Presentation<br/></p>
+  <a style = "text-align : center; font-size: 24px; margin-left : 25%;" href = "https://f.hubspotusercontent20.net/hubfs/421676/Investor%20Presentation%20Q420.pdf">View slides</a>
+  </div>
+  <div style = "background-color : rgb(245, 248, 250); width : 275px; height: 240px; border : 1px solid  gainsboro; margin : auto; margin-top : 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); float : left; margin-left :3%;">
+  <h3 style = "color : #33475b; font-size : 25px; margin-left : 5%;">HubSpot Analyst Day</h3>
+  <p href style = "text-align : center; font-weight: bold; font-size: 20px; margin-left : 4%;">2020 Analyst Day</p>
+  <p style = "font-size: 17px; margin-left : 20%;"> September 22, 2020</p><br/>
+  <p style = "font-weight: bold; font-size: 18px; margin-left : 5%;"><a href = "https://www.youtube.com/playlist?list=PLlw9qxNtFom36T7YLgMnfrVntYYAp5E1q">View webcast</a> |
+  <a href = "https://f.hubspotusercontent00.net/hubfs/53/Analyst%20Day%202020%20Presentations/Analyst%20Day%202020%20Presentations.pdf">View slides</a></p><br/><br/><br/>
+  <br/> <br/> <br/>
+  </div>
+  </div>
+  <div style = "margin-top : 30%; margin-left : 26%; clear : left; font-size : 20px;">
+  <br/><br/><br/><br/>
+  <h3>Upcoming Events</h3>
+  <p>There's nothing upcoming. Please check back later!</p>
+  </div>`;
+  document.getElementById('contentDisplay').innerHTML += `<div id = 'pastEvents' style = "margin-top : 5%; margin-left : 26%; clear : left; font-size : 20px;">
+  <h3>Past Events & Presentation</h3>
+  </div>`
+  for(let i = 0; i < data.pastEvents.length; i++) {
+    document.getElementById("pastEvents").innerHTML += `<p>${data.pastEvents[i].title}<br/><span style = "font-size : 15px;">${data.pastEvents[i].date}</span>
+    <br/>${data.pastEvents[i].links}</p>`;
+  }
  }
 
 let updateLeadershipDetails = () => {
@@ -258,10 +287,41 @@ for (let i = 0; i < faqStyle.length; i++) {
     }
   });
 }
- }
+}
+
  document.getElementById('investorOverview').addEventListener("click", addInvestorOverview);
  document.getElementById("news").addEventListener("click", addNews);
  document.getElementById("eventUpdate").addEventListener("click", updateEvent);
  document.getElementById("leadershipDetails").addEventListener("click", updateLeadershipDetails);
  document.getElementById("faq").addEventListener("click", showFaq);
  window.onload = fetchStockValues();
+
+ //Adding contents from another HTML file to my page
+ function includefooterHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("footer-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+includefooterHTML();
