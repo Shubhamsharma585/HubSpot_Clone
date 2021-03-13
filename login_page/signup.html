@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="signup_style.css">
+</head>
+<body>
+    <div id="top_bar">
+        <div id="hubspot_logo">
+            <img src="https://cdn.worldvectorlogo.com/logos/hubspot.svg" alt="image" height="50px" width="350px">
+            <p id="login_link">Have an account?
+                <a href="login.html">Sign In.</a></p>
+        </div>
+    </div>
+    <div id="middle_bar">
+        <div id="signup_left">
+            <div id="signup_details">
+                <p class="text">Create your free account</p>
+                <button id="google_login">Sign Up With Google</button>
+                <hr style="margin-top: 50px;color: black;margin-bottom: 25px;">
+                <form action="#" class="login">
+                    <div class="feild">
+                        <input type="text" id="signup_firstname" placeholder="First Name" required>
+                    </div>
+                    <div class="feild">
+                        <input type="text" id="signup_lastname" placeholder="Last Name" required>
+                    </div>
+                    <div class="feild">
+                        <input type="text" id="signup_email" placeholder="Email Address" required>
+                    </div>
+                    <div class="feild">
+                        <input type="password" id="signup_password" placeholder="Password" required>
+                    </div>
+                </form>
+                <button id="signup_button" onclick="signUp()">SignUp</button>
+                By creating an account, you agree to the
+                <a href="#">HubSpot Customer Terms of Service</a> and
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+        <div id="image_right">
+            <img alt="Smiling Person" src="//cdn2.hubspot.net/hubfs/53/assets/hubspot.com/_style-guide/sg-module-images/3@2x.png" >
+
+            <h4>HubSpot CRM is 100% free, forever.</h4>
+            <p>No credit card needed</p>
+        </div>
+    </div>
+
+        <script src="signup.js">
+            
+        </script>
+</body>
+</html>

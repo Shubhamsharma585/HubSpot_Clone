@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir Next W02, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  background-color: #ffff;
+  color: #33475b;
+}
+html,
+body {
+  height: 100%;
+}
+#top_bar {
+  height: 100px;
+  width: 100%;
+  border: 0.5px solid rgb(187, 187, 187);
+  border-top: 0;
+}
+#top_bar h2 {
+  float: left;
+  font-size: 35px;
+  font-style: oblique 30deg 50deg;
+  padding: 30px 0 0 30px;
+}
+#top_bar img {
+  float: right;
+  margin: 25px 0 0 0;
+}
+#container {
+  width: 100%;
+  padding-bottom: 100px;
+}
+#left_container {
+  width: 15%;
+  float: left;
+  padding: 20px 25px 0 20px;
+  list-style: none;
+  line-height: 50px;
+  font-weight: 600;
+}
+#left_container button {
+  border: 0;
+  height: 30px;
+  width: 150px;
+  font-size: 15px;
+  font-variant: small-caps;
+}
+
+#left_container button:hover {
+  background-color: #eaf0f6;
+  border-radius: 10px;
+}
+
+#right_container {
+  display: grid;
+  gap: 20px;
+  margin: 20px 0 0 10px;
+  line-height: 40px;
+  font-style: oblique;
+  grid-template-rows: 500px;
+  grid-template-columns: 49% 49%;
+  grid-template-areas: "image1 image2";
+}
+.image1 {
+  grid-area: image1;
+  border: 1px solid skyblue;
+  padding: 10px 10px 10px 10px;
+}
+
+.image2 {
+  grid-area: image2;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid skyblue;
+}
+.image1:hover,
+.image2:hover {
+  outline: none !important;
+  border: 1.5px solid #0091ae;
+  box-shadow: 0 0 10px #719ece;
+  border-radius: 2px;
+  background-color: #eaf0f6;
+}
