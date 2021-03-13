@@ -193,17 +193,17 @@ body {
   }
   .line {
     width: 30px;
-    height: 2px;
+    height: 3px;
     background-color: black;
     margin: 1px;
-    margin: 5px;
+    margin: 5px auto;
+    border-radius: 5px;
   }
   .line:nth-child(2) {
-    height: 2px;
+    height: 3px;
+    width: 40px;
   }
-  .line:nth-child(3) {
-    height: 4px;
-  }
+  
   .burger-menu {
     display: none;
     margin-top: 0;
@@ -214,10 +214,18 @@ body {
     height: 50px;
     margin: 0px 10px 0 0;
     padding: 30px 0 10px 30px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     border-bottom: 1px solid rgb(229, 236, 245);
+    
   }
-
+  .burger-menu li a{
+    font-weight: 500;
+    
+  }
+  
+  .burger-menu li a:hover{
+    color: #ff7a59;
+  }
 
 
   #software:after {    
