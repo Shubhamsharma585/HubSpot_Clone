@@ -172,6 +172,7 @@ let addInvestorOverview = () => {
   <hr/>
   <table id = "pagination"></table>
   <div style = 'margin-left : 40%;' id = "paginationButtons"></div>
+  <br/><br/>
   </div>`;
   printSplitPages(1);
   printButtons();
