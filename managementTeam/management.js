@@ -85,6 +85,7 @@ document.getElementById('advisoryBoard').addEventListener("click", makeAdvisoryB
 document.getElementById('directorBoard').addEventListener("click", makeDirectorBoard);
 window.onload = defineManagementTeam();
 
+
 //Adding contents from another HTML file to my page
  function includefooterHTML() {
   var z, i, elmnt, file, xhttp;

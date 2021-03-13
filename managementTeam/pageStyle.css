@@ -17,7 +17,8 @@ a:hover{
 #navbar {
     height: 15%;
     width: 100%;
-    border: 1px solid black;
+    background-image: url('./../imgs/navbar.png');
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #minorNavBar {
     width: 100%;
@@ -112,6 +113,7 @@ a:hover{
     width: 99%;
     float : left;
     margin: 1%;
+    display: block;
   }
   
   .image {
