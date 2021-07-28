@@ -4,6 +4,12 @@
 
 ## Team Chenab
 
+## Screenshots
+
+* Landing Page
+![Landing Page](screenshots/hubspot.png)
+
+
 ### Team Members
  
 - Kiran R
