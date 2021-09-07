@@ -871,18 +871,25 @@
 
 
     <script type="text/javascript">
-
-    var how = document.getElementById("four");
+        
+var how = document.getElementById("four");
     how.addEventListener("click",fun1);
-
+    let flg = true;
     function fun1()
-    {
-        var a = event.target.id;
-        console.log(a);
-       var fourb = document.getElementsByClassName("four-b1");
-       fourb[0].setAttribute("class","four-b2");
-    }
-
+    {    
+       if(flg)
+       {
+        var fourb = document.getElementsByClassName("four-b1");
+        fourb[0].setAttribute("class","four-b2");
+        flg = false;
+       }
+       else
+       {
+        var fourb = document.getElementsByClassName("four-b2");
+        fourb[0].setAttribute("class","four-b1");
+        flg = true;
+       }    
+    } 
 
 
  </script>
